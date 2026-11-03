@@ -25,7 +25,7 @@
 # 1 <= n <= 104
 
 class Solutions:
-    def fizzBuzz(num:int)->list[str]:
+    def fizzBuzz(self,num:int)->list[str]:
         result = []
         for i in range(1,num+1):
             # Added This Lines Because it use one condition that is % 15 and if i use %3 or %5 both are become same
@@ -38,4 +38,7 @@ class Solutions:
             else :
                 result.append(str(i))
         return result
-    print(fizzBuzz(15))
+    
+# Hide This it leetcode because leetcode provide input by himself
+obj = Solutions()
+print(obj.fizzBuzz(15))

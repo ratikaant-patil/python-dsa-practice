@@ -1,3 +1,7 @@
+# LeetCode Question Not Take Input From us it provide by itself
+
+
+
 # LeetCode Solutions in Python
 
 A collection of LeetCode problems solved using Python, focused on improving problem-solving skills, strengthening data structures and algorithms knowledge, and preparing for technical coding interviews.
