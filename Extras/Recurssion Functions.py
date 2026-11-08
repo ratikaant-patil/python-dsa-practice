@@ -6,7 +6,7 @@ def printNumber(n):
         print(n , end=" ")
         printNumber(n-1)
 
-printNumber(10)
+# printNumber(10)
 
 
 #<===================== Question 2 ====================>
@@ -21,7 +21,7 @@ def fact(n):
     #     return 1    
     # return n * fact(n-1)
 
-print(fact(5))
+# print(fact(5))
 
 
 
@@ -35,7 +35,7 @@ def factorial(n):
     if n!= 0:
         return n * factorial(n-1)
     return 1
-print("factorial is " ,factorial(5))
+# print("factorial is " ,factorial(5))
 
 
 #<===================== Question 4 ====================>
@@ -53,7 +53,7 @@ def countSum(n):
     n = n // 10
 
     return digit + countSum(n) 
-print(countSum(1234))
+# print(countSum(1234))
 
 #<===================== Question 5 ====================>
 
@@ -62,7 +62,30 @@ print(countSum(1234))
 # Given a string s, return the reversed string using recursion.
 
 # Example:
-# Input: s = "hello"Output: "olleh"
+# Input: s = "hello"
+# Output: "olleh"
+
+def reverseString(s):
+
+    print("Entering:", s)
+
+    if len(s) == 0:
+        return ""
+
+    result = s[-1] + reverseString(s[:-1])
+
+    print("Returning:", result)
+
+    return result
+
+
+print("Final:", reverseString("hello"))
+
+
+
+
+
+
 
 
 
