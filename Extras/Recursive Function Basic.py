@@ -23,6 +23,7 @@ printOnetoFive(5)
 # Input: n = 5Output: 5 4 3 2 1
 
 print()
+print()
 
 def printNtoOne(n):
     # Base Condition
@@ -34,7 +35,7 @@ def printNtoOne(n):
 
 printNtoOne(5)
 
-
+# ewfwefw
 
 # 3. Sum of first N natural numbers
 
