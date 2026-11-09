@@ -79,14 +79,7 @@ def reverseString(s):
     return result
 
 
-print("Final:", reverseString("hello"))
-
-
-
-
-
-
-
+# print("Final:", reverseString("hello"))
 
 
 # 4. Check Whether an Array Is Sorted
@@ -95,6 +88,21 @@ print("Final:", reverseString("hello"))
 
 # Example:
 # Input: nums = [1, 2, 3, 4, 5]Output: True
+
+def findSortedArray(arr):
+
+    if len(arr) <= 1:
+        return True
+
+    if arr[0] > arr[1]:
+        return False
+
+    print(arr)
+
+    return findSortedArray(arr[1:])
+
+
+print(findSortedArray([1, 2, 3, 4, 5]))
 
 
 
