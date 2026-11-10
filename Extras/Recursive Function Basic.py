@@ -35,6 +35,48 @@ def printNtoOne(n):
 
 printNtoOne(5)
 
+
+print()
+print()
+
+def printNtoOne(n):
+    # Base Condition
+    if n<=0:
+        return 0
+
+    print(n, end=" ")
+    printNtoOne(n-1)
+
+printNtoOne(5)
+
+
+print()
+print()
+
+def printNtoOne(n):
+    # Base Condition
+    if n<=0:
+        return 0
+
+    print(n, end=" ")
+    printNtoOne(n-1)
+
+printNtoOne(5)
+
+
+print()
+print()
+
+def printNtoOne(n):
+    # Base Condition
+    if n<=0:
+        return 0
+
+    print(n, end=" ")
+    printNtoOne(n-1)
+
+printNtoOne(5)
+
 # ewfwefw
 
 # 3. Sum of first N natural numbers
