@@ -22,7 +22,7 @@ printOnetoFive(5)
 # Given an integer n, print numbers in reverse order.
 # Input: n = 5Output: 5 4 3 2 1
 
-print()
+
 print()
 
 def printNtoOne(n):
@@ -35,99 +35,6 @@ def printNtoOne(n):
 
 printNtoOne(5)
 
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
-
-print()
-print()
-
-def printNtoOne(n):
-    # Base Condition
-    if n<=0:
-        return 0
-
-    print(n, end=" ")
-    printNtoOne(n-1)
-
-printNtoOne(5)
 
 # ewfwefw
 
