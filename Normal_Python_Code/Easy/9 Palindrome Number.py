@@ -48,7 +48,7 @@ print(obj.isPalindrome(141))
 # Using This Solution you only need to check half way not a full way of int
 class SolutionTwo:
     def isPalindromeTwo(self, x: int) -> bool:
-        if x < 0 or (x % 10 == 0 and x != 0):
+        if x < 0 or (x % 10 == 0 and x != 0):   
             return False
 
         reverse = 0

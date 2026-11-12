@@ -47,7 +47,7 @@ print(obj.subtractProductAndSum(4421))
 
 
 
-# <======================================== ANSWERS  #1 ========================================> 
+# <======================================== ANSWERS  #2 ========================================> 
 class SolutionTwo:
     def subtractProductAndSumTwo(self, n: int) -> int:
         product = 1
