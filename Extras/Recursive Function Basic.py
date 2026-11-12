@@ -140,14 +140,120 @@ def reverseString(n):
 
     return n[-1] + reverseString(n[:-1])
 
-print(reverseString("Hello"))
+# print(reverseString("Hello"))
 
 
 
 # 9. Check whether a string is palindrome
 
 # Check whether a string reads the same forward and backward.
-# Input: s = "madam"Output: TrueInput: s = "hello"Output: False
+# Input: s = "madam"
+# Output: True
+# Input: s = "hello"
+# Output: False
+
+def checkFandD(n)->bool:
+    # Base Condition
+    if len(n) <= 1:
+        return True
+
+    # Compare first and last characters
+    if n[0] != n[-1]:
+        return False
+
+    # Removes First and last characters
+    return checkFandD(n[1:-1])
+
+# print(checkFandD("madamOne"))
+
+
+# <============================ Questions Similer To Question No 9 ======================================== >
+# 1. Check whether a number is palindrome
+# Input: n = 121
+# Output: True
+
+# Input: n = 123
+# Output: False
+
+def checkPalindromeNum(n):
+    # Base Condition
+    if n % 10 == 0:
+        return True
+
+    digit = n % 10
+    rem = n // 10
+    digit_2 = rem // 10
+
+
+    print("digit =" ,digit)
+    print("digit_2 =" ,digit_2)
+    print(n)
+    if digit != digit_2 :
+        return False
+
+    return checkPalindromeNum(n//10)
+    
+
+# print(checkPalindromeNum(121))
+
+
+# 2. Check whether a string contains only digits
+# Input: s = "12345"
+# Output: True
+
+# Input: s = "12abc"
+# Output: False
+
+def checkStringOrDigit(n):
+    # Base Condition
+    if len(n) == 0:
+        return True
+
+    # If not ('0' <= n[-1] <= '9')
+    # we are using it for if condition is true make it false if false make it true
+    # we are checking is that digit if its true then make it false else if block execute and we get wrong answer
+    
+    # if not ('0' <= n[-1] <= '9'):
+    #     return False
+
+    # Another Opproch is 
+
+    # In this if condition get true then recursive function works thats it
+    if ('0' <= n[-1] <= '9'):
+        return checkStringOrDigit(n[:-1])
+
+    return False
+
+
+print(checkStringOrDigit("12345f"))
+
+
+
+# 3. Check whether two strings are equal
+
+# Input: s1 = "hello", s2 = "hello"
+# Output: True
+
+# Input: s1 = "hello", s2 = "world"
+# Output: False
+
+
+# 4. Count occurrences of a character
+
+# Input: s = "banana", ch = "a"
+# Output: 3
+
+
+# 5. Check whether a string is reversed correctly
+
+# Input: s1 = "hello", s2 = "olleh"
+# Output: True
+
+# Input: s1 = "hello", s2 = "world"
+# Output: False
+
+
+
 
 
 
