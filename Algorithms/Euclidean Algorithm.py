@@ -9,3 +9,11 @@ def gcd(a,b):
 
 print(gcd(5,50))
 
+# Least Common Multiple (LCM)
+
+def lcm(a,b):
+    return a*b//gcd(a,b)
+# a * b // gcd(a,b) is this formula for returning Least Common Multiple
+
+print(gcd(5,50))
+print(lcm(15,50))
