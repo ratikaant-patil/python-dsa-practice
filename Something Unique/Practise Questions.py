@@ -141,4 +141,23 @@ for i in dict2:
         dict3[i] = dict2[i]
 print(dict3)
 
-         
+
+# Another Ways to do it
+dict3 = {"name": "Ratikant", "age": 25, "city": "Pune"}
+dict4 = {"age": 26, "language": "Python", "experience": "3.5 years"}
+
+# for j in dict4:
+#     dict3[j] = dict4[j]
+# print(dict3)
+
+# Using built-in method
+# dict3.update(dict4)
+# print(dict3)
+
+
+# Using Dictionary Unpacking
+print({**dict3})
+print({**dict4})
+dict5 = {**dict3 , **dict4}
+#When keys are duplicated, the value from the second dictionary wins.
+print(dict5)
